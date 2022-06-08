@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<trayApp hoverText="" hoverFailedText="" hoverUnknownText="" width="350" icon="" failedicon="" unknownicon="" includeEnvInfo="True" preventMultipleInstances="True" configVersion="3.4.6" configDate="6/8/2022" publisher="Singlesource IT" appname="SS-IT System Tray Icon" headertext="Singlesource IT" msiname="Connect2Help.msi" msidotnetname="SSITConnect2Help.msi" subheadertext="About this computer" customheadertext="" custommessagetext="" backgroundcolor="#FFFFFF" headercolor="#EB6907" subheadercolor="#094AB2" sectionheadercolor="#000000" sectiondatacolor="#000000" bordercolor="#569CE3" itembackgroundcolor="#569CE3" itemfontcolor="#FFFFFF" itemhighlightcolor="#1F6780" logoimage="">
+  <urlItem ActionType="MailLink" text="Email Us!" url="mailto:support@ss-it.com?subject=My computer is broken1!" commandargs="" writetoeventlog="False" />
+  <separator />
+  <urlItem ActionType="WebLink" text="Open a ticket!" url="https://singlesource-it.com/support/" commandargs="" writetoeventlog="False" />
+</trayApp>
