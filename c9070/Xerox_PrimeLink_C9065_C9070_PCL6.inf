@@ -1,0 +1,151 @@
+
+
+;***************************************************************************************
+; INF file for Xerox PrimeLink C9065/C9070 PCL6 print driver
+; Copyright (c) 2020 Xerox Corporation
+; All rights reserved.
+;***************************************************************************************
+
+
+[Version]
+Signature="$Windows NT$"
+Provider=%XR%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=Xerox_PrimeLink_C9065_C9070.cat
+ClassVer=4.0
+DriverVer=08/19/2020,7.187.0.0
+
+[Manufacturer]
+"Xerox"=Model,NTamd64
+[Model.NTamd64]
+"Xerox PrimeLink C9065 V4 PCL6" = INSTALL_SECTION_C9065,usbprint\XeroxPrimeLink_C90659401
+"Xerox PrimeLink C9065 V4 PCL6" = INSTALL_SECTION_C9065,wsdprint\XeroxPrimeLink_C90659401
+"Xerox PrimeLink C9065 V4 PCL6" = INSTALL_SECTION_C9065,XeroxPrimeLink_C90659401
+
+"Xerox PrimeLink C9070 V4 PCL6" = INSTALL_SECTION_C9070,usbprint\XeroxPrimeLink_C907007C0
+"Xerox PrimeLink C9070 V4 PCL6" = INSTALL_SECTION_C9070,wsdprint\XeroxPrimeLink_C907007C0
+"Xerox PrimeLink C9070 V4 PCL6" = INSTALL_SECTION_C9070,XeroxPrimeLink_C907007C0
+
+"Xerox PrimeLink C9065/C9070 V4 PCL6" = INSTALL_SECTION_C9065,usbprint\XeroxNoSel_f7b4d0eff6a0ef86
+"Xerox PrimeLink C9065/C9070 V4 PCL6" = INSTALL_SECTION_C9065,wsdprint\XeroxNoSel_f7b4d0eff6a0ef86
+"Xerox PrimeLink C9065/C9070 V4 PCL6" = INSTALL_SECTION_C9065,XeroxNoSel_f7b4d0eff6a0ef86
+"Xerox PrimeLink C9065/C9070 V4 PCL6" = INSTALL_SECTION_C9065,{BA25E4D6-58BC-4C79-A1FB-9212333A896A}
+
+[ControlFlags]
+ExcludeFromSelect = usbprint\XeroxNoSel_f7b4d0eff6a0ef86
+ExcludeFromSelect = wsdprint\XeroxNoSel_f7b4d0eff6a0ef86
+ExcludeFromSelect = XeroxNoSel_f7b4d0eff6a0ef86
+ExcludeFromSelect = {BA25E4D6-58BC-4C79-A1FB-9212333A896A}
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[INSTALL_SECTION_C9065]
+CopyFiles=GENERAL_FILES_C9065,LOCALE_FILES_C9065,XR_FILTER_FILES,MODEL_FILES_C9065
+
+[INSTALL_SECTION_C9070]
+CopyFiles=GENERAL_FILES_C9065,LOCALE_FILES_C9065,XR_FILTER_FILES,MODEL_FILES_C9070
+
+[MODEL_FILES_C9065]
+C9065.GPD
+C9065-manifest.ini
+C9065.dpb
+C9065-conf.GPD
+
+[MODEL_FILES_C9070]
+C9070.GPD
+C9070-manifest.ini
+C9070.dpb
+C9070-conf.GPD
+
+[GENERAL_FILES_C9065]
+ProductData.xml
+Xerox_PrimeLink_C9065_C9070-pipelineconfig.xml
+Xerox_PrimeLink_C9065_C9070-constraints.js
+Xerox_PrimeLink_C9065_C9070-qpb.xml
+Xerox_PrimeLink_C9065_C9070-devmode-map.xml
+
+[LOCALE_FILES_C9065]
+Xerox_PrimeLink_C9065_C9070-textres.gpd
+xr-TextResources.dll
+
+[XR_FILTER_FILES]
+xr-Utilities.v7.132.12.0.dll
+xr-FilterUtilities.v7.132.12.0.dll
+xr-VFilter.dll
+xr-TransformFilter.dll
+xr-AnnotationFilter.dll
+xr-PDLStreamFilter.dll
+msvcp140.dll
+vcruntime140.dll
+vcruntime140_1.dll
+ucrtbase.dll
+api-ms-win-crt-stdio-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-convert-l1-1-0.dll
+api-ms-win-crt-heap-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-crt-environment-l1-1-0.dll
+api-ms-win-crt-filesystem-l1-1-0.dll
+api-ms-win-crt-locale-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+api-ms-win-crt-multibyte-l1-1-0.dll
+api-ms-win-crt-time-l1-1-0.dll
+api-ms-win-crt-utility-l1-1-0.dll
+api-ms-win-crt-conio-l1-1-0.dll
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-process-l1-1-0.dll
+
+[SourceDisksNames.amd64]
+1 = %Location%,,
+2 = %Location%,,,x64
+
+[SourceDisksFiles]
+C9065.GPD                                                   = 1
+C9065-manifest.ini                                          = 1
+C9065-conf.GPD                                              = 1
+C9065.dpb                                                   = 1
+C9070.GPD                                                   = 1
+C9070-manifest.ini                                          = 1
+C9070-conf.GPD                                              = 1
+C9070.dpb                                                   = 1
+Xerox_PrimeLink_C9065_C9070-pipelineconfig.xml              = 1
+Xerox_PrimeLink_C9065_C9070-constraints.js                  = 1
+Xerox_PrimeLink_C9065_C9070-qpb.xml                         = 1
+Xerox_PrimeLink_C9065_C9070-devmode-map.xml                 = 1
+Xerox_PrimeLink_C9065_C9070-textres.gpd                     = 1
+ProductData.xml                                             = 1
+xr-TextResources.dll                                        = 2
+xr-Utilities.v7.132.12.0.dll                                = 2
+xr-FilterUtilities.v7.132.12.0.dll                          = 2
+xr-VFilter.dll                                              = 2
+xr-TransformFilter.dll                                      = 2
+xr-AnnotationFilter.dll                                     = 2
+xr-PDLStreamFilter.dll                                      = 2
+msvcp140.dll                                                = 2
+vcruntime140.dll                                            = 2
+vcruntime140_1.dll                                          = 2
+ucrtbase.dll                                                = 2
+api-ms-win-crt-stdio-l1-1-0.dll                             = 2
+api-ms-win-crt-runtime-l1-1-0.dll                           = 2
+api-ms-win-crt-convert-l1-1-0.dll                           = 2
+api-ms-win-crt-heap-l1-1-0.dll                              = 2
+api-ms-win-crt-string-l1-1-0.dll                            = 2
+api-ms-win-crt-environment-l1-1-0.dll                       = 2
+api-ms-win-crt-filesystem-l1-1-0.dll                        = 2
+api-ms-win-crt-locale-l1-1-0.dll                            = 2
+api-ms-win-crt-math-l1-1-0.dll                              = 2
+api-ms-win-crt-multibyte-l1-1-0.dll                         = 2
+api-ms-win-crt-time-l1-1-0.dll                              = 2
+api-ms-win-crt-utility-l1-1-0.dll                           = 2
+api-ms-win-crt-conio-l1-1-0.dll                             = 2
+api-ms-win-crt-private-l1-1-0.dll                           = 2
+api-ms-win-crt-process-l1-1-0.dll                           = 2
+
+[OEM URLS]
+"Xerox"="http://go.microsoft.com/fwlink/?LinkID=49&prd=10798&sbp=Printers"
+
+[Strings]
+Location="Xerox PrimeLink C9065/C9070"
+XR="Xerox"

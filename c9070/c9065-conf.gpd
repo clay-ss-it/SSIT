@@ -1,0 +1,288 @@
+
+*%******************************************************************************************
+*% AutoConfig features for Xerox PrimeLink C9065/C9070
+*% Copyright(c) 2020 Xerox Corporation
+*% All rights reserved.
+*%******************************************************************************************
+ 
+*GPDSpecVersion: "1.0"
+
+*Feature: InstallableAuthenticationModuleActual
+{
+	*rcNameID: =IDS_NOT_VISIBLE
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: None
+	*ConcealFromUI?: TRUE
+		
+	*Option: CommonAccessCardPiv
+	{
+		*rcNameID: =IDS_NOT_VISIBLE
+				
+	}
+		
+	*Option: None
+	{
+		*rcNameID: =IDS_NOT_VISIBLE
+				
+	}
+}
+
+
+*Feature: InstallableCoilPunchUnitActual
+{
+	*rcNameID: =IDS_COIL_PUNCH
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: NotInstalled
+		
+	*Option: NotInstalled
+	{
+		*rcNameID: =IDS_INSTOPT_NOT_INSTALLED
+				
+	}
+		
+	*Option: SpartaIso
+	{
+		*rcNameID: =IDS_INSTOPT_SPARTA_COIL_PUNCH_ISO_UNIT
+				
+	}
+		
+	*Option: SpartaAnsi
+	{
+		*rcNameID: =IDS_INSTOPT_SPARTA_COIL_PUNCH_ANSI_UNIT
+				
+	}
+}
+
+
+*Feature: InstallableFaxOutActual
+{
+	*rcNameID: =IDS_LAN_FAX_MODULE
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: NotInstalled
+		
+	*Option: Installed
+	{
+		*rcNameID: =IDS_INSTOPT_INSTALLED
+				
+	}
+		
+	*Option: NotInstalled
+	{
+		*rcNameID: =IDS_INSTOPT_NOT_INSTALLED
+				
+	}
+}
+
+
+*Feature: InstallableHighCapacityFeederActual
+{
+	*rcNameID: =IDS_INSTOPT_FEEDER
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: NotInstalled
+		
+	*Option: Hcf
+	{
+		*rcNameID: =IDS_INSTOPT_HIGH_CAP_FEEDER
+				
+	}
+		
+	*Option: HcfOversized
+	{
+		*rcNameID: =IDS_INSTOPT_OVERSIZED_HICAP_FEEDER
+				
+	}
+		
+	*Option: HcfOversized_2Trays
+	{
+		*rcNameID: =IDS_INSTOPT_OVERSIZED_HICAP_FEEDER_2TRAYS
+				
+	}
+		
+	*Option: NotInstalled
+	{
+		*rcNameID: =IDS_INSTOPT_NOT_INSTALLED
+				
+	}
+}
+
+
+*Feature: InstallableHolePunchUnitActual
+{
+	*rcNameID: =IDS_INSTOPT_HOLE_PUNCH_UNIT
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: NotInstalled
+		
+	*Option: NotInstalled
+	{
+		*rcNameID: =IDS_INSTOPT_NOT_INSTALLED
+				
+	}
+		
+	*Option: Punch_2And_3HoleSheet
+	{
+		*rcNameID: =IDS_INSTOPT_2_3_PUNCH_UNIT
+					 *Constraints: LIST(InstallableOutputDeliveryUnitActual.OffsetCatchTray)
+				
+	}
+		
+	*Option: Punch_2And_4HoleSheet
+	{
+		*rcNameID: =IDS_INSTOPT_2_4_PUNCH_UNIT
+					 *Constraints: LIST(InstallableOutputDeliveryUnitActual.OffsetCatchTray)
+				
+	}
+		
+	*Option: Punch_4HoleSheet
+	{
+		*rcNameID: =IDS_INSTOPT_4_PUNCH_UNIT
+					 *Constraints: LIST(InstallableOutputDeliveryUnitActual.OffsetCatchTray)
+				
+	}
+}
+
+
+*Feature: InstallableInputPaperTraysActual
+{
+	*rcNameID: =IDS_INSTOPT_PAPER_TRAYS
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: 5Trays
+		
+	*Option: 5Trays
+	{
+		*rcNameID: =IDS_INSTOPT_FIVE_TRAYS
+				
+	}
+}
+
+
+*Feature: InstallableJobAccountingSystemActual
+{
+	*rcNameID: =IDS_NOT_VISIBLE
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: None
+	*ConcealFromUI?: TRUE
+		
+	*Option: Billing
+	{
+		*rcNameID: =IDS_NOT_VISIBLE
+				
+	}
+		
+	*Option: InternalAuditron
+	{
+		*rcNameID: =IDS_NOT_VISIBLE
+				
+	}
+		
+	*Option: LocalBillingSecure
+	{
+		*rcNameID: =IDS_NOT_VISIBLE
+				
+	}
+		
+	*Option: NetworkBilling
+	{
+		*rcNameID: =IDS_NOT_VISIBLE
+				
+	}
+		
+	*Option: None
+	{
+		*rcNameID: =IDS_NOT_VISIBLE
+				
+	}
+}
+
+
+*Feature: InstallableOutputDeliveryUnitActual
+{
+	*rcNameID: =IDS_INSTOPT_FINISHER
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: OffsetCatchTray
+		
+	*Option: BrFinisher
+	{
+		*rcNameID: =IDS_OPTION_FINISHER_BR_FINISHER
+				
+	}
+		
+	*Option: BrFinisherBookletMaker
+	{
+		*rcNameID: =IDS_OPTION_FINISHER_BR_BOOKLET_FINISHER
+				
+	}
+		
+	*Option: OffsetCatchTray
+	{
+		*rcNameID: =IDS_INSTOPT_OCT_OFFSET_CATCH_TRAY
+				
+	}
+		
+	*Option: SimpleCatchTray
+	{
+		*rcNameID: =IDS_INSTOPT_SCT_SIMPLE_CATCH_TRAY
+				
+	}
+		
+	*Option: PrFinisher
+	{
+		*rcNameID: =IDS_OPTION_FINISHER_PR_FINISHER
+				
+	}
+		
+	*Option: PrFinisherBookletMaker
+	{
+		*rcNameID: =IDS_OPTION_FINISHER_PR_BOOKLET_FINISHER
+				
+	}
+		
+	*Option: PrFinisherFtm
+	{
+		*rcNameID: =IDS_OPTION_FINISHER_PR_FINISHER_FTM
+				
+	}
+}
+
+
+*Feature: InstallableSquareFoldTrimmerActual
+{
+	*rcNameID: =IDS_INSTOPT_SQAUREFOLD_TRIMMER
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: NotInstalled
+		
+	*Option: Installed
+	{
+		*rcNameID: =IDS_INSTOPT_INSTALLED
+				
+	}
+		
+	*Option: NotInstalled
+	{
+		*rcNameID: =IDS_INSTOPT_NOT_INSTALLED
+				
+	}
+}
+
+
+*Feature: InstallableTriFoldActual
+{
+	*rcNameID: =IDS_INSTOPT_TRIFOLD_MODULE
+	*FeatureType: PRINTER_PROPERTY
+	*DefaultOption: NotInstalled
+		
+	*Option: Installed
+	{
+		*rcNameID: =IDS_INSTOPT_INSTALLED
+					 *Constraints: LIST(InstallableOutputDeliveryUnitActual.OffsetCatchTray)
+				
+	}
+		
+	*Option: NotInstalled
+	{
+		*rcNameID: =IDS_INSTOPT_NOT_INSTALLED
+				
+	}
+}
+
+
+
